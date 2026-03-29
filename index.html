@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TableEats - Restaurant Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🍽️ TableEats</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="reservation.html">Book</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Find Restaurants Near You</h1>
+        <p>Book tables instantly at the best restaurants in your area</p>
+        <button class="btn" id="findRestaurantsBtn">📍 Find Restaurants</button>
+    </section>
+
+    <!-- Location Display Section -->
+    <section class="location">
+        <h2>Your Current Location</h2>
+        <div id="locationLoader" style="display:none">
+            <p>Detecting your location...</p>
+        </div>
+        <div id="locationInfo" style="display:none">
+            <p><strong>City:</strong> <span id="locationCity">-</span></p>
+            <p><strong>Coordinates:</strong> <span id="locationLat">-</span>, <span id="locationLng">-</span></p>
+            <p><strong>Status:</strong> <span id="locationDetectionStatus">-</span></p>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map">
+        <h2>Restaurants Near You</h2>
+        <iframe 
+            id="restaurantMap" 
+            width="100%" 
+            height="400" 
+            style="border:0" 
+            loading="lazy"
+            allowfullscreen="">
+        </iframe>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TableEats. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollToTopBtn">↑ Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

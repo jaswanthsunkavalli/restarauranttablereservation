@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Table - TableEats</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">🍽️ TableEats</div>
+        <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurants</a></li>
+            <li><a href="reservation.html">Book</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Book Your Table</h1>
+        <p>Reserve a table at your favorite restaurant</p>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form">
+        <form id="reservationForm">
+            <input type="text" id="customerName" placeholder="Full Name" required>
+            <input type="email" id="customerEmail" placeholder="Email Address" required>
+            <input type="tel" id="customerPhone" placeholder="Phone (10 digits)" required>
+            
+            <select id="restaurantSelect" required>
+                <option>-- Select Restaurant --</option>
+            </select>
+            
+            <select id="numGuests" required>
+                <option>-- Number of Guests --</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6+ Guests</option>
+            </select>
+            
+            <input type="date" id="reservationDate" required>
+            
+            <select id="timeSlot" required>
+                <option>-- Select Time --</option>
+                <option>11:00 AM</option>
+                <option>12:00 PM</option>
+                <option>1:00 PM</option>
+                <option>6:00 PM</option>
+                <option>7:00 PM</option>
+                <option>8:00 PM</option>
+                <option>9:00 PM</option>
+            </select>
+            
+            <textarea id="specialRequests" placeholder="Special requests (optional)" rows="3"></textarea>
+            
+            <button type="submit" class="btn">Complete Booking</button>
+        </form>
+    </section>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal" style="display:none">
+        <div class="modal-box">
+            <h2>✓ Booked Successfully!</h2>
+            <p id="successMessage"></p>
+            <button class="btn" onclick="window.location.href='index.html'">Back to Home</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 TableEats. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollToTopBtn">↑ Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
