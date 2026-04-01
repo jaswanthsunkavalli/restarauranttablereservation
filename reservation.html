@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">🍽️ TableEats</div>
         <ul class="nav-menu">
@@ -22,14 +21,10 @@
             <span></span>
         </div>
     </nav>
-
-    <!-- Page Header -->
     <section class="page-header">
         <h1>Book Your Table</h1>
         <p>Reserve a table at your favorite restaurant</p>
     </section>
-
-    <!-- Booking Form Section -->
     <section class="booking-form">
         <form id="reservationForm">
             <input type="text" id="customerName" placeholder="Full Name" required>
@@ -51,7 +46,6 @@
             </select>
             
             <input type="date" id="reservationDate" required>
-            
             <select id="timeSlot" required>
                 <option>-- Select Time --</option>
                 <option>11:00 AM</option>
@@ -68,8 +62,6 @@
             <button type="submit" class="btn">Complete Booking</button>
         </form>
     </section>
-
-    <!-- Success Modal -->
     <div id="successModal" class="modal" style="display:none">
         <div class="modal-box">
             <h2>✓ Booked Successfully!</h2>
@@ -77,13 +69,9 @@
             <button class="btn" onclick="window.location.href='index.html'">Back to Home</button>
         </div>
     </div>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 TableEats. All rights reserved.</p>
     </footer>
-
-    <!-- Scroll to Top Button -->
     <button class="scroll-top" id="scrollToTopBtn">↑ Top</button>
 
     <script src="script.js"></script>
