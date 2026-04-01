@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="logo">🍽️ TableEats</div>
         <ul class="nav-menu">
@@ -22,15 +21,15 @@
             <span></span>
         </div>
     </nav>
-
-    <!-- Hero Section -->
     <section class="hero">
-        <h1>Find Restaurants Near You</h1>
-        <p>Book tables instantly at the best restaurants in your area</p>
-        <button class="btn" id="findRestaurantsBtn">📍 Find Restaurants</button>
+        <div class="hero-content">
+            <h1>Find Restaurants Near You</h1>
+            <p>Book tables instantly at the best restaurants in your area</p>
+            <button class="btn" id="findRestaurantsBtn">
+                📍 Find Restaurants
+            </button>
+        </div>
     </section>
-
-    <!-- Location Display Section -->
     <section class="location">
         <h2>Your Current Location</h2>
         <div id="locationLoader" style="display:none">
@@ -42,26 +41,24 @@
             <p><strong>Status:</strong> <span id="locationDetectionStatus">-</span></p>
         </div>
     </section>
-
-    <!-- Map Section -->
     <section class="map">
-        <h2>Restaurants Near You</h2>
+        <h2>Explore Restaurants Near You</h2>
+        <p style="text-align: center; margin-bottom: 20px; color: var(--gray);">
+            Discover restaurants in your area. Click "📍 Map" on any restaurant to see its exact location.
+        </p>
         <iframe 
             id="restaurantMap" 
             width="100%" 
             height="400" 
             style="border:0" 
             loading="lazy"
-            allowfullscreen="">
+            allowfullscreen=""
+            referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
-
-    <!-- Footer -->
     <footer>
         <p>&copy; 2026 TableEats. All rights reserved.</p>
     </footer>
-
-    <!-- Scroll to Top Button -->
     <button class="scroll-top" id="scrollToTopBtn">↑ Top</button>
 
     <script src="script.js"></script>
